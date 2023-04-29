@@ -1,4 +1,8 @@
 /* Add global styles */
+a {
+  color: #f8fcfff3;
+}
+
 body{
     background-repeat: no-repeat;
     background-size: cover;
