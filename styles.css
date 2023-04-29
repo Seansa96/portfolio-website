@@ -1,0 +1,154 @@
+/* Add global styles */
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-image: url('images/pexels-pixabay-270360.jpg');
+  }
+  
+  
+  /* Define styles for the top bar */
+  .top-bar {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Set the background color to a light gray */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Add a drop shadow */
+    text-align: center;
+  }
+  
+  .top-bar h1 {
+    font-size: 25px;
+    color: #FFA500;
+    font-weight: 100;
+    font-family: Bank Gothic, E;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.5);
+    /* Add a slight text shadow */
+    text-transform: uppercase;
+    
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .top-bar h1:hover {
+    /* Change the background color on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .side-bar {
+    position: fixed;
+    left: 0;
+    top: vh;
+    /* Position the top of the sidebar below the top bar */
+    width: 200px;
+    height: calc(90vh - 30px);
+    /* Set the height of the sidebar to the height of the container minus 30px for padding */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  #sidebar-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .side-bar ul {
+    margin-top: 100px
+  }
+  .side-bar h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+    color: goldenrod;
+    font-family: Bank Gothic;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    
+  }
+  
+  .side-bar li {
+    list-style-type: none;
+    line-height: 2.5;
+    text-align: center;
+    color: #f8fcfff3;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    font-family: Bank Gothic;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 50px;
+    margin-top:0px;
+    border-radius: 5px; /* round the corners of the box */
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5), 
+                2px 2px 5px rgba(0, 0, 0, 0.5); /* add shadow effect */
+    border: 1px solid #444; /* adjust border styles and color */
+    border-top: 3px solid #444;
+    border-bottom: 3px solid #444
+  }
+  .side-bar li:hover {
+    /* Change the background color on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .side-bar li span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .side-bar li span:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Define styles for the container */
+  .container {
+    display: flex;
+    background-image: url('images/pexels-pixabay-270360.jpg');
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column; /* Add this line */
+    /* Set the height to 90% of the viewport height */
+  }
+  
+  .box {
+    width: 1350px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    margin-left: 100px;
+  }
+  
+
+  .box:nth-child(1) {
+    order: 2;
+  }
+  
+  .box:nth-child(2) {
+    order: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* CSS styles for screens smaller than 768px */
+    .side-bar {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* CSS styles for screens smaller than 480px */
+    .side-bar {
+      font-size: 12px;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  
