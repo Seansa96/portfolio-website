@@ -4,6 +4,7 @@ body{
     background-size: cover;
     background-blend-mode: soft-light;
     background-image: url('images/pexels-pixabay-270360.jpg');
+    zoom: 1;
   }
   
   
@@ -49,6 +50,7 @@ body{
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     box-shadow: 0 0 5px rgba(50, 41, 41, 0.5);
+    position: fixed;
   }
   #sidebar-toggle {
     position: absolute;
@@ -105,14 +107,16 @@ body{
   /* Define styles for the container */
   .container {
     display: flex;
-    background-size: cover;
-    height: 100vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    flex-direction: column; /* Add this line */
-    /* Set the height to 90% of the viewport height */
+    height: calc(100vh - 10vh);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: soft-light;
+    text-align: center;
   }
+  
   
   .box {
     width: 1350px;
@@ -121,6 +125,8 @@ body{
     margin: 10px;
     margin-left: 100px;
     display: block;
+    
+    
   }
   
 
