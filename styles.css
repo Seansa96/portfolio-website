@@ -41,16 +41,14 @@ body{
   }
   
   .side-bar {
-    position: fixed;
     left: 0;
-    top: vh;
     /* Position the top of the sidebar below the top bar */
     width: 200px;
     height: calc(90vh - 30px);
     /* Set the height of the sidebar to the height of the container minus 30px for padding */
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(50, 41, 41, 0.5);
   }
   #sidebar-toggle {
     position: absolute;
@@ -107,7 +105,6 @@ body{
   /* Define styles for the container */
   .container {
     display: flex;
-    background-image: url('images/pexels-pixabay-270360.jpg');
     background-size: cover;
     height: 100vh;
     justify-content: center;
@@ -123,6 +120,7 @@ body{
     background-color: rgba(255, 255, 255, 0.2);
     margin: 10px;
     margin-left: 100px;
+    display: block;
   }
   
 
