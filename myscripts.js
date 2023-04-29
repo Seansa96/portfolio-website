@@ -9,11 +9,26 @@ sidebarToggle.addEventListener('click', toggleSidebar);
 
 
 
-function toggleSidebar() {
-  if (sidebar.classList.contains('hidden')) {
-    sidebar.classList.remove('hidden');
-  } else {
-    sidebar.classList.add('hidden');
+  function toggleSidebar() {
+    const sidebar = document.querySelector('.side-bar');
+    const currentOpacity = window.getComputedStyle(sidebar).getPropertyValue('opacity');
+    if (currentOpacity === '1') {
+      sidebar.style.opacity = '0';
+    } else {
+      sidebar.style.opacity = '1';
+    }
   }
-}
+
 // Path: myscripts.js
+const heading = document.getElementById('heading');
+const text = heading.textContent;
+heading.textContent = '';
+
+for (let i = 0; i < text.length; i++) {
+  const letter = text[i];
+  const span = document.createElement('span');
+  span.textContent = letter;
+  span.style.animationDelay = `${i * 0.1}s`;
+  heading.appendChild(span);
+  console.log(`Animating letter ${i}: ${letter}`);
+}
