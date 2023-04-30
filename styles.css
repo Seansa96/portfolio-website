@@ -15,9 +15,10 @@ body{
   /* Define styles for the top bar */
   .top-bar {
     height: 10vh;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Set the background color to a light gray */
+    width: 100;
+    margin-right: 35px;
+    margin-left: 50px;
+    background-color: rgba(255, 255, 255, 0.2); /* Set the background color */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,11 +122,15 @@ h1 {
   }
   #sidebar-toggle {
     position: absolute;
-    top: 0;
+    top: -5;
     left: 0;
-    padding: 10px;
-    font-size: 20px;
+    width: 200x;
+    height: 50px;
+    font-size: 30px;
     cursor: pointer;
+    color: goldenrod;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0px rgba(50, 41, 41, 0.2);
   }
   .side-bar ul {
     margin-top: 100px
