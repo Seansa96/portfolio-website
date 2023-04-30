@@ -55,6 +55,35 @@ body{
     opacity: 1;
   }
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: inherit;
+  }
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 300;
+  margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  animation: typing 5s steps(30, end) 1s 1 normal both,
+             blink 1s step-end infinite;
+}
+
   .top-bar h1 {
     font-size: 25px;
     color: #FFA500;
