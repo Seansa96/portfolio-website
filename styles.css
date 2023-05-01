@@ -151,7 +151,7 @@ h1 {
     width: 200px;
     height: calc(90vh - 30px);
     /* Set the height of the sidebar to the height of the container minus 30px for padding */
-    background-color: rgba(156, 204, 101, 0.5);
+    background-color: rgba(1, 1, 1, 0.2);
     padding: 20px;
     box-shadow: 0 0 5px rgba(50, 41, 41, 0.5);
     position: fixed;
@@ -238,7 +238,7 @@ h1 {
   .box {
     width: 1350px;
     height: 500px;
-    background-color: rgba(68, 177, 228, 0.5);
+    background-color: rgba(1, 1, 1, 0.2);
     margin: 10px;
     margin-left: 100px;
     display: block;
