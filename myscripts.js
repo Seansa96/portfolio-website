@@ -32,3 +32,44 @@ for (let i = 0; i < text.length; i++) {
   heading.appendChild(span);
   console.log(`Animating letter ${i}: ${letter}`);
 }
+
+
+
+// Initialize the Facebook SDK
+window.fbAsyncInit = function () {
+  FB.init({
+    appId: '1680592515733355',
+    cookie: true,
+    xfbml: true,
+    version: 'v12.0',
+  });
+
+  // Check if the user is already logged in
+  FB.getLoginStatus(function (response) {
+    statusChangeCallback(response);
+  });
+};
+
+// Handle the login status
+function statusChangeCallback(response) {
+  if (response.status === 'connected') {
+    console.log('Logged in successfully');
+    getUserData();
+  } else {
+    console.log('Not logged in');
+  }
+}
+
+// Get user data after a successful login
+function getUserData() {
+  FB.api('/me', function (response) {
+    console.log('User data:', response);
+  });
+}
+
+// Log the user in when the login button is clicked
+function checkLoginState() {
+  FB.getLoginStatus(function (response) {
+    statusChangeCallback(response);
+  });
+}
